@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real 121</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="cropit/dist/jquery.cropit.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="cropit/css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- JOSH CSS -->
+    <link href="css/joshcss.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div class="div1">
+    <h1>Share a Real Photo</h1>
+  </div>
+  <div class="div2">
+    <h1>Send One Print to Anyone.</h1>
+  </div>
+  <div class="image-editor" id="upload">
+        <h1>Which will you send?</h1>
+    <input type="file" class="cropit-image-input" id="uploader">
+    <div class="cropit-preview" id="cropit-previewer"></div>
+    <div class="image-size-label">
+    </div>
+    <button class="rotate-cw" id="rotatebtn"><i class="fa fa-rotate-right fa-2x"></i></button>
+    <div id="sliderdiv"><input type="range" class="cropit-image-zoom-input" id="slider"></div>
+    <button class="export" style="display:none;">Export</button>
+  </div>
+
+<div class="form">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="8F2LCYVPAA6GG">
+<table>
+<tr><td><input type="hidden" name="on0" value="Caption">Photo Caption:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on1" value="Name">Recipient Name:</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on2" value="Address">Recipient Address:</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on3" value="Address2">Recipient Address 2 (Optional):</td></tr><tr><td><input type="text" name="os3" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on4" value="CityStateZip">Recipient City, State, and Zip:</td></tr><tr><td><input type="text" name="os4" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="no_shipping" value="1"></td></tr>
+</table>
+<input type="image" src="http://ryanswarts.com/assets/gmail-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+
+  <section id="contact" class="contact bg-primary">
+      <div class="container">
+          <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+          <ul class="list-inline list-social">
+              <li class="social-twitter">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="social-facebook">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="social-google-plus">
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+  <footer>
+      <div class="container">
+          <p>&copy; 2016 Josh Graef. All Rights Reserved.</p>
+          <ul class="list-inline">
+              <li>
+                  <a href="#">Customer Service</a>
+              </li>
+              <li>
+                  <a href="#">Contact</a>
+              </li>
+              <li>
+                  <a href="#">FAQ</a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+
+    <script>
+      $(function() {
+        $('.image-editor').cropit({
+          imageState: {
+            src: 'http://lorempixel.com/500/400/',
+          },
+        });
+
+        $('.rotate-cw').click(function() {
+          $('.image-editor').cropit('rotateCW');
+        });
+        $('.rotate-ccw').click(function() {
+          $('.image-editor').cropit('rotateCCW');
+        });
+
+        $('.export').click(function() {
+          var imageData = $('.image-editor').cropit('export');
+          window.open(imageData);
+        });
+      });
+    </script>
+  </body>
+</html>

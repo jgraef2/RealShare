@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 20vw;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  }
+.introt {
+  background-color: #00CDC1;
+  height: 9vw;
+  color: #000;
+  font-size: 6vw;
+  text-align: center;
+  font-weight: bold;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+nav {
+  font-size:6vw;
+  font-weight: bold;
+  margin: auto;
+  color: black;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: absolute;
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+p {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  margin: 0;
+}
+.topmenu {
+  display: flex;
+  flex-direction: row;
+  font-size: 5vw;
+  justify-content: center;
+}
+textarea {
+    width: 320px;
+    font-family: 'Itim', cursive;
+    font-size: 24px;
+}
+.captionstyle textarea {
+    overflow:hidden;
+    resize: none;
+    border: .5px solid #000;
+    font-family: 'Itim', cursive;
+    font-size: 24px;
+    outline: none;
+    color: black;
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    padding-top: 10px;
+    margin-top: 300px;
+    box-sizing: border-box;
+    border: solid 0px;
+    position: relative;
+    z-index: 50000;
+}
+#uploadbtn {
+  color: white;
+  margin: 50px;
+  position: absolute;
+  border-radius: 190px;
+  color: black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  background-color: white;
+}
+input[type='file'] {
+  color: transparent;
+  padding-bottom: 20px;
+}
+.choosefilebtn {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 230px;
+}
+
+textarea:focus:-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.div1 {
+  width: 33.33vw;
+  height: 33.33vw;
+  text-align: center;
+  background-image: url(../img/pho3.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 80vw;
+}
+.div2 {
+  width: 33.33vw;
+  height: 33.33vw;
+  text-align: center;
+  background-image: url(../img/pho2.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 5.7vw;
+}
+.div3 {
+  width: 33.33vw;
+  height: 33.33vw;
+  text-align: center;
+  background-image: url(../img/pho.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div1 h1 {
+  color:white;
+  font-size: 3.5vw;
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.div2 h1 {
+  color:white;
+  font-size: 3.5vw;
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.div3 h1 {
+  color:white;
+  font-size: 3.5vw;
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.form {
+  color: black;
+  border: none;
+  text-align: left;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+#paytab {
+  margin:auto;
+  width: 300px;
+  padding: 20px;
+}
+#paytab input[type='text'] {
+  width: 300px;
+  padding: 4px;
+  outline-color: black;
+}
+#upload {
+  color: white;
+  background-color: #FAD500;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#upload h1 {
+  color: black;
+  margin: 0;
+  font-weight: bold;
+  font-size: 34px;
+  padding-left:20px;
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 300px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 500px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 130px;
+    line-height: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .topmenu {
+    flex-direction: column;
+  }
+  .div1 {
+    width: 100%;
+    height: 100vw;
+  }
+  .div1 h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .div2 h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .div2 {
+    width: 100%;
+    height: 100vw;
+  }
+  .div3 {
+    display: none;
+  }
+}

@@ -1,0 +1,90 @@
+#upload {
+  background-color: #00CDC1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#uploader {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  width: 300px;
+  text-align: center;
+}
+#slider {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+body {
+  margin: 0;
+}
+.image-editor {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cropit-previewer {
+  text-align: center;
+  background-color: #000;
+  background-size: cover;
+  border: 17px solid white;
+  border-bottom: 80px solid white;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 334px !important;
+  height: 397px !important;
+}
+.cropit-preview-image-container {
+  cursor: move;
+}
+.export {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+#uploadbtn {
+  z-index: 500;
+  width: 500px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#rotatebtn {
+  color: black;
+  opacity: .9;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 150px;
+  background-color:transparent;
+}
+.rotate-cw {
+}
+
+.image-size-label {
+  margin-top: 10px;
+}
+
+input, .export {
+  display: block;
+}
+footer {
+  height: 20%;
+}
+button {
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
